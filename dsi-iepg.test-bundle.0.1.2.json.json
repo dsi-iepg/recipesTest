@@ -1,0 +1,33 @@
+{
+  "manifests": {
+    "dsi-iepg/test-bundle": {
+      "manifest": {
+        "bundles": {
+          "Iepg\\Bundle\\TestBundle": ["all"]
+        },
+        "copy-from-recipe": {
+          "config/": "%CONFIG_DIR%"
+        },
+        "env": {
+          "VAR_STRING_IPEG": "Hello from .env",
+          "VAR_STRING_IPEG_OPTION": "Optionnal from .envvvv"
+          }
+      },
+      "files": {
+        "config/packages/iepg_test.yaml": {
+          "contents": [
+            "iepgdsi:",
+            "    my_var_string: '%env(VAR_STRING_IPEG)%'",
+            "    my_var_string_option: 'OOOOOOptionnel !!!'",
+            "    my_array:",
+            "        - element1",
+            "        - element2",
+            "    my_integer: 22"
+          ],
+          "executable": false
+        }
+      },
+      "ref": "7405f3af1312d1f9121afed4dddef636c6c7ff00"
+    }
+  }
+}
