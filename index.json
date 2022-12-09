@@ -8,6 +8,7 @@
     "is_contrib": true,
     "_links": {
         "repository": "https://github.com/dsi-iepg/recipesTest",
+        "origin_template": "test-bundle:0.1@github.com/dsi-iepg/recipesTest:main",
         "recipe_template": "https://api.github.com/repos/dsi-iepg/recipesTest/contents/dsi-iepg.test-bundle.0.1.2.json"
     }
 }
