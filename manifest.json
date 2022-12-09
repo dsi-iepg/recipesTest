@@ -1,0 +1,10 @@
+
+
+{
+    "container": {
+        "locale": "en"
+    },
+    "bundles": {
+        "Sylius\\Bundle\\ResourceBundle\\SyliusResourceBundle": ["all"]
+    }
+}
